@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
         }
         .card-title {
             color: #64FFDA;
-            font-size: 5em;
+            font-size: 3em;
             font-weight: 200;
         }
         .card-content {
@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
     `],
     template: `
         <md-card class="card" fxLayout="column" fxLayoutAlign="center center">
-            <md-card-title class="card-title">{{title | uppercase}}</md-card-title>
+            <md-card-title class="card-title">{{title}}</md-card-title>
             <span class="card-content">
                 <p class="card-content">{{content}}</p>
                 <span class="signature">{{signature}}</span>

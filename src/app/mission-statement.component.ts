@@ -21,14 +21,18 @@ import { Component, OnInit } from '@angular/core';
             background-position: center center;
             background-size: cover;
         }
+
+        @media only screen and (max-width: 412px) {
+
+            .card-title { 
+                font-size: 1.8em; 
+            }
+        }
     `],
     template: `
         <md-card class="card">
-            <md-card-header>
-                <div md-card-avatar class="card-icon"></div>
-                 <md-card-title class="card-title">{{title}}</md-card-title>
-            </md-card-header>
             <md-card-content>
+                <md-card-title class="card-title">{{title}}</md-card-title>
                 <p class="card-content">{{content}}</p>
             </md-card-content>
             <md-card-actions>

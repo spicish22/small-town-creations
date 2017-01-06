@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import 'assets/images/founders.jpg';
-
 @Component({
   selector: 'app-root',
   template: `
